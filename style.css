@@ -1,4 +1,3 @@
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -273,39 +272,6 @@ p { color: var(--cinza); }
   margin-bottom: 2.2rem;
   max-width: 480px;
 }
-
-/* Badge decorativo */
-.hero-badge {
-  position: absolute;
-  bottom: 3rem;
-  right: 5%;
-  z-index: 2;
-  text-align: center;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  backdrop-filter: blur(6px);
-  border-radius: var(--radius-lg);
-  padding: 1.2rem 1.8rem;
-}
-
-.badge-km {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: var(--laranja);
-  line-height: 1;
-}
-
-.badge-label {
-  display: block;
-  font-size: .72rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: rgba(248,245,240,.6);
-  margin-top: .3rem;
-}
-
 /* ========================
    6. SECTION GENÉRICA
 ======================== */
@@ -815,16 +781,6 @@ p { color: var(--cinza); }
   }
   .menu-toggle-input:checked ~ .menu-toggle-label span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
-  }
-
-  /* Hero */
-  .hero-badge {
-    display: none;
-  }
-
-  /* Rotas */
-  .rotas-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Tabela */
