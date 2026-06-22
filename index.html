@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotoRota RS — Guia para Motociclistas de Primeira Viagem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       HEADER / NAVEGAÇÃO
+  ======================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#inicio" class="logo" aria-label="MotoRota RS - Início">
+        <span class="logo-icon">🏍️</span>
+        <span class="logo-text">Sua<strong>Rota</strong> <em>RS</em></span>
+      </a>
+
+      <!-- Navegação principal -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#equipamentos">Equipamentos</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#rotas">Rotas RS</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburguer (CSS-only via checkbox) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu" />
+      <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- Menu mobile (revelado pelo checkbox) -->
+      <nav class="mobile-nav" aria-label="Menu mobile">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#equipamentos">Equipamentos</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#rotas">Rotas RS</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ========================
+       HERO / BANNER PRINCIPAL
+  ======================== -->
+  <section id="inicio" class="hero" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Rio Grande do Sul · Brasil</span>
+      <h1 id="hero-title">Guia para Motociclistas<br /><strong>de Primeira Viagem</strong></h1>
+      <p class="hero-sub">Tudo o que você precisa saber antes de pegar a estrada.</p>
+      <a href="#rotas" class="btn btn-primary">Explorar Rotas ›</a>
+    </div>
+    <!-- Detalhe decorativo: odômetro estilizado -->
+    <div class="hero-badge" aria-hidden="true">
+      <span class="badge-km">+3.200</span>
+      <span class="badge-label">km de rotas gaúchas</span>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       SEÇÃO 1 — EQUIPAMENTOS
+  ======================== -->
+  <section id="equipamentos" class="section section--light" aria-labelledby="equip-title">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Antes de sair</span>
+        <h2 id="equip-title">Equipamentos Essenciais</h2>
+        <p>Na moto, o equipamento certo não é opcional — é parte da viagem.</p>
+      </header>
+
+      <div class="cards-grid">
+
+        <!-- Card: Capacete -->
+        <article class="card card--equip">
+          <div class="card-icon" aria-hidden="true">🪖</div>
+          <h3>Capacete</h3>
+          <p>Use sempre capacete com certificação INMETRO. Prefira o modelo integral para maior proteção em impactos frontais e laterais. Verifique o estado das viseiras antes de cada viagem.</p>
+          <span class="card-tag obrigatorio">Obrigatório</span>
+        </article>
+
+        <!-- Card: Jaqueta -->
+        <article class="card card--equip">
+          <div class="card-icon" aria-hidden="true">🧥</div>
+          <h3>Jaqueta de Proteção</h3>
+          <p>Jaquetas com protetores nas costas, ombros e cotovelos absorvem energia em quedas. Prefira materiais resistentes à abrasão como couro ou tecido Cordura.</p>
+          <span class="card-tag recomendado">Recomendado</span>
+        </article>
+
+        <!-- Card: Luvas -->
+        <article class="card card--equip">
+          <div class="card-icon" aria-hidden="true">🧤</div>
+          <h3>Luvas</h3>
+          <p>Em quedas, as mãos são as primeiras a tocar o asfalto. Luvas com proteção nos nós dos dedos e palmares reforçadas reduzem significativamente os ferimentos.</p>
+          <span class="card-tag recomendado">Recomendado</span>
+        </article>
+
+        <!-- Card: Botas -->
+        <article class="card card--equip">
+          <div class="card-icon" aria-hidden="true">👢</div>
+          <h3>Botas</h3>
+          <p>Botas de moto cobrem o tornozelo e oferecem proteção contra torsões. Solado antiderrapante é essencial, especialmente em trechos de pedra ou terra molhada.</p>
+          <span class="card-tag recomendado">Recomendado</span>
+        </article>
+
+        <!-- Card: Capa de Chuva -->
+        <article class="card card--equip">
+          <div class="card-icon" aria-hidden="true">🌧️</div>
+          <h3>Capa de Chuva</h3>
+          <p>O RS tem clima imprevisível. Leve sempre uma capa impermeável compacta. Hipotermia e visibilidade reduzida são riscos reais em estradas serranas com chuva.</p>
+          <span class="card-tag essencial">Essencial no RS</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       SEÇÃO 2 — SEGURANÇA
+  ======================== -->
+  <section id="seguranca" class="section section--dark" aria-labelledby="sec-title">
+    <div class="container">
+      <header class="section-header section-header--light">
+        <span class="section-tag section-tag--orange">Na pista</span>
+        <h2 id="sec-title">Dicas de Segurança</h2>
+        <p>Chegar bem é mais importante do que chegar rápido.</p>
+      </header>
+
+      <div class="safety-grid">
+
+        <div class="safety-item">
+          <div class="safety-num" aria-hidden="true">01</div>
+          <div class="safety-body">
+            <h3>Revisão da Moto</h3>
+            <p>Antes de qualquer viagem, verifique óleo do motor, fluído de freio, corrente, faróis e retrovisores. Uma moto revisada é uma moto confiável.</p>
+          </div>
+        </div>
+
+        <div class="safety-item">
+          <div class="safety-num" aria-hidden="true">02</div>
+          <div class="safety-body">
+            <h3>Verificação dos Pneus</h3>
+            <p>Calibre os pneus de acordo com o manual do fabricante. Pneus desgastados ou com calibragem incorreta comprometem a frenagem e a estabilidade em curvas.</p>
+          </div>
+        </div>
+
+        <div class="safety-item">
+          <div class="safety-num" aria-hidden="true">03</div>
+          <div class="safety-body">
+            <h3>Planejamento da Rota</h3>
+            <p>Estude o trajeto com antecedência. Identifique postos de combustível, hospitais e trechos com obras ou relevo desafiador — especialmente na Serra Gaúcha.</p>
+          </div>
+        </div>
+
+        <div class="safety-item">
+          <div class="safety-num" aria-hidden="true">04</div>
+          <div class="safety-body">
+            <h3>Descanso na Viagem</h3>
+            <p>Pare a cada 90 minutos para hidratação e alongamento. Fadiga é uma das principais causas de acidentes em longas distâncias. Não force a viagem se estiver cansado.</p>
+          </div>
+        </div>
+
+        <div class="safety-item">
+          <div class="safety-num" aria-hidden="true">05</div>
+          <div class="safety-body">
+            <h3>Limites de Velocidade</h3>
+            <p>Respeite as velocidades máximas especialmente em estradas estaduais com neblina, curvas cegas e animais na pista — situações comuns nas serras gaúchas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       SEÇÃO 3 — ROTAS RS
+  ======================== -->
+  <section id="rotas" class="section section--light" aria-labelledby="rotas-title">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Rio Grande do Sul</span>
+        <h2 id="rotas-title">Rotas Famosas do RS</h2>
+        <p>Quatro roteiros imperdíveis para você descobrir de moto.</p>
+      </header>
+
+      <div class="rotas-grid">
+
+        <!-- Rota 1: Serra Gaúcha -->
+        <article class="card card--rota" style="--rota-color: #e05c1a;">
+          <div class="rota-header">
+            <span class="rota-num" aria-hidden="true">01</span>
+            <h3>Serra Gaúcha</h3>
+          </div>
+          <p class="rota-desc">A mais clássica das rotas gaúchas. Paisagens de cair o queixo, vinícolas e arquitetura alemã e italiana em cada curva da montanha.</p>
+          <ul class="rota-pontos" aria-label="Pontos principais">
+            <li>📍 Gramado</li>
+            <li>📍 Canela</li>
+            <li>📍 Nova Petrópolis</li>
+          </ul>
+          <div class="rota-meta">
+            <div class="meta-item">
+              <span class="meta-label">Distância</span>
+              <span class="meta-val">~180 km</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Dificuldade</span>
+              <span class="meta-val nivel medio">Média</span>
+            </div>
+          </div>
+          <p class="rota-destaque">✨ <strong>Destaques:</strong> Parque do Caracol, Lago Negro, Festas típicas</p>
+        </article>
+
+        <!-- Rota 2: Rota Romântica -->
+        <article class="card card--rota" style="--rota-color: #c0392b;">
+          <div class="rota-header">
+            <span class="rota-num" aria-hidden="true">02</span>
+            <h3>Rota Romântica</h3>
+          </div>
+          <p class="rota-desc">Percurso com forte influência alemã, atravessando cidades históricas do Vale do Sinos até a Serra. Perfeita para iniciantes que querem paisagem sem grandes desafios.</p>
+          <ul class="rota-pontos" aria-label="Pontos principais">
+            <li>📍 São Leopoldo</li>
+            <li>📍 Nova Hartz</li>
+            <li>📍 Gramado</li>
+          </ul>
+          <div class="rota-meta">
+            <div class="meta-item">
+              <span class="meta-label">Distância</span>
+              <span class="meta-val">~120 km</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Dificuldade</span>
+              <span class="meta-val nivel facil">Fácil</span>
+            </div>
+          </div>
+          <p class="rota-destaque">✨ <strong>Destaques:</strong> Museu do Imigrante, casas enxaimel, chocolates artesanais</p>
+        </article>
+
+        <!-- Rota 3: Aparados da Serra -->
+        <article class="card card--rota" style="--rota-color: #2980b9;">
+          <div class="rota-header">
+            <span class="rota-num" aria-hidden="true">03</span>
+            <h3>Aparados da Serra</h3>
+          </div>
+          <p class="rota-desc">Para quem busca adrenalina e natureza bruta. Os cânions mais impressionantes do Brasil estão aqui, com estradas sinuosas e muita neblina ao amanhecer.</p>
+          <ul class="rota-pontos" aria-label="Pontos principais">
+            <li>📍 Cambará do Sul</li>
+            <li>📍 Cânion Itaimbezinho</li>
+            <li>📍 Cânion Fortaleza</li>
+          </ul>
+          <div class="rota-meta">
+            <div class="meta-item">
+              <span class="meta-label">Distância</span>
+              <span class="meta-val">~310 km</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Dificuldade</span>
+              <span class="meta-val nivel dificil">Difícil</span>
+            </div>
+          </div>
+          <p class="rota-destaque">✨ <strong>Destaques:</strong> Maior cânion da América do Sul, Pampas, fauna nativa</p>
+        </article>
+
+        <!-- Rota 4: Rota do Vinho -->
+        <article class="card card--rota" style="--rota-color: #8e44ad;">
+          <div class="rota-header">
+            <span class="rota-num" aria-hidden="true">04</span>
+            <h3>Rota do Vinho</h3>
+          </div>
+          <p class="rota-desc">Entre parreiras e cantinas históricas, esta rota celebra a cultura italiana do RS. As estradas sinuosas entre vinhedos são um espetáculo para os sentidos.</p>
+          <ul class="rota-pontos" aria-label="Pontos principais">
+            <li>📍 Bento Gonçalves</li>
+            <li>📍 Garibaldi</li>
+            <li>📍 Monte Belo do Sul</li>
+          </ul>
+          <div class="rota-meta">
+            <div class="meta-item">
+              <span class="meta-label">Distância</span>
+              <span class="meta-val">~95 km</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Dificuldade</span>
+              <span class="meta-val nivel facil">Fácil</span>
+            </div>
+          </div>
+          <p class="rota-destaque">✨ <strong>Destaques:</strong> Vinícolas premiadas, Maria Fumaça, Festival do Vinho</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       SEÇÃO 4 — CHECKLIST
+  ======================== -->
+  <section class="section section--checklist" aria-labelledby="check-title">
+    <div class="container">
+      <header class="section-header section-header--light">
+        <span class="section-tag section-tag--orange">Não esqueça nada</span>
+        <h2 id="check-title">Checklist de Viagem</h2>
+        <p>Revise este checklist antes de ligar a moto.</p>
+      </header>
+
+      <div class="table-wrapper">
+        <table class="checklist-table" aria-label="Itens do checklist de viagem">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Importância</th>
+              <th scope="col">Observação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Documento da Moto</td>
+              <td>Documentação</td>
+              <td><span class="pill pill--red">Obrigatório</span></td>
+              <td>CRLV original ou digital no app Carteira Digital DETRAN</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> CNH (Cat. A)</td>
+              <td>Documentação</td>
+              <td><span class="pill pill--red">Obrigatório</span></td>
+              <td>Habilitação categoria A válida e dentro da validade</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Kit de Ferramentas</td>
+              <td>Emergência</td>
+              <td><span class="pill pill--orange">Importante</span></td>
+              <td>Chave combinada, alicate, fita isolante, fusíveis reserva</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Água</td>
+              <td>Hidratação</td>
+              <td><span class="pill pill--orange">Importante</span></td>
+              <td>Mínimo 1,5L por pessoa para trechos entre paradas</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Dinheiro / Cartão</td>
+              <td>Financeiro</td>
+              <td><span class="pill pill--orange">Importante</span></td>
+              <td>Leve dinheiro físico — nem todo posto rural aceita cartão</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Carregador de Celular</td>
+              <td>Comunicação</td>
+              <td><span class="pill pill--yellow">Recomendado</span></td>
+              <td>Carregador veicular ou powerbank para navegação GPS</td>
+            </tr>
+            <tr>
+              <td><span class="check-icon" aria-hidden="true">☑</span> Roupa Impermeável</td>
+              <td>Proteção</td>
+              <td><span class="pill pill--yellow">Recomendado</span></td>
+              <td>O clima no RS muda rápido — especialmente nas serras</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       SEÇÃO 5 — CONTATO
+  ======================== -->
+  <section id="contato" class="section section--light" aria-labelledby="contact-title">
+    <div class="container container--narrow">
+      <header class="section-header">
+        <span class="section-tag">Fale conosco</span>
+        <h2 id="contact-title">Contato</h2>
+        <p>Dúvidas, sugestões ou quer compartilhar sua rota? Manda mensagem.</p>
+      </header>
+
+      <!-- Formulário apenas visual -->
+      <div class="form-wrapper">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn--full">Enviar Mensagem ›</button>
+        <p class="form-note">* Formulário ilustrativo — sem envio de dados.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo" aria-label="MotoRota RS">
+        <span aria-hidden="true">🏍️</span>
+        <span>Moto<strong>Rota</strong> <em>RS</em></span>
+      </div>
+      <p class="footer-tagline">Guia para Motociclistas de Primeira Viagem · Rio Grande do Sul</p>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#rotas">Rotas RS</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> MotoRota RS. Projeto educativo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
